@@ -2,7 +2,7 @@ const aoijs = require('aoi.js');
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const bot = new aoijs.Bot({
-	token:'ODc2MDc0OTAzODczMzg4NTY0.YReyVQ.U9u2QpfRE6fVx4hZC4sPo2Sxq_U',
+	token:'nou',
 	prefix: ['suggestions', '$getservervar[prefix]']
 });
 bot.loadCommands(`./Commands/`);
