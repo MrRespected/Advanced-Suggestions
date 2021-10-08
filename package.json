@@ -1,0 +1,19 @@
+{
+  "name": "-asdf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aoi.js": "^4.5.0-dev.4090123.1628554441",
+    "dbdjs.db": "^2.0.1",
+    "discord.js": "^12.5.3",
+  }
+}
