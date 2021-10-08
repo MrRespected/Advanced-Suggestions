@@ -1,0 +1,11 @@
+module.exports = [{
+name:"about",
+aliases:['development','info','information'],
+code:`$let[e;$apimessage[$channelid;;{author:About $username[$get[c]]:$useravatar[$get[c]]:}{title:$usertag}{field:Developer:[$usertag[$botownerid]](https#COLON#//discord.com/users/$botownerid):yes}{field:Guilds:$servercount:yes}{field:Members:$allmemberscount:yes}{field:No.Of Total Suggestions Sent:$getvar[s]:yes}{field:Uptime:$uptime:yes}{field:RAM:$rammb:yes}{field:CPU:$cpu%:yes}{field:Websocket Ping:$pingms:yes}{field:Database Ping:$dbpingms:yes}{field:Client Latency:$botpingms:yes}{field:Docs:[Click Here](https#COLON#//app.gitbook.com/@mrrespected/s/advanced-suggestions-docs/):yes}{field:Invite:[Click Here](https#COLON#//discord.com/api/oauth2/authorize?client_id=876074903873388564&permissions=388224&scope=bot):yes}{field:Another Bot By $usertag[$botownerid]:[$username[873171466827477043]]($replacetext[$getbotinvite[admin];$clientid;873171466827477043]):yes}{footer:Requested by $usertag | Thanks for using me! | $servername:$replacetext[$replacetext[$isvalidlink[$servericon];true;$servericon];false;]}{color:RANDOM}{thumbnail:$useravatar[$get[c]]};{actionRow:Reload Stats,2,2,reload,🔁|0|false,false};$messageID:true;yes]]
+$let[c;$clientid]`
+}, {
+type:"interactionCommand",
+name:"reload",
+prototype:"button",
+code:`$interactionreply[;{author:About $username[$get[c]]:$useravatar[$get[c]]:}{title:$usertag}{field:Developer:[$usertag[$botownerid]](https#COLON#//discord.com/users/$botownerid):yes}{field:Guilds:$servercount:yes}{field:Members:$allmemberscount:yes}{field:No.Of Total Suggestions Sent:$getvar[s]:yes}{field:Uptime:$uptime:yes}{field:RAM:$rammb:yes}{field:CPU:$cpu%:yes}{field:Websocket Ping:$pingms:yes}{field:Database Ping:$dbpingms:yes}{field:Docs:[Click Here](https#COLON#//app.gitbook.com/@mrrespected/s/advanced-suggestions-docs/):yes}{field:Invite:[Click Here](https#COLON#//discord.com/api/oauth2/authorize?client_id=876074903873388564&permissions=388224&scope=bot):yes}{footer:Requested by $usertag | Thanks for using me! | $servername:$replacetext[$replacetext[$isvalidlink[$servericon];true;$servericon];false;]}{color:RANDOM}{thumbnail:$useravatar[$get[c]]};{actionRow:Reload Stats,2,2,reload,🔁|0|false,false};;7]
+$let[c;$clientid]`}]
